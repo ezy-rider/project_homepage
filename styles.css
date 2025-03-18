@@ -29,7 +29,10 @@ line-height: 1.5;
 -webkit-font-smoothing: antialiased;
 }
 
-
+a {
+    text-decoration: none;
+    color: black;
+}
 
 body {
     min-height: 100vh;
@@ -64,6 +67,7 @@ body {
 }
 
 .header-description {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -75,7 +79,7 @@ body {
 }
 
 .header-description > p:first-child {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: "Playfair Display";
 
 }
@@ -87,7 +91,20 @@ body {
     bottom: 10px;
     left: 200px;
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
+}
+
+.header .links {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.header .link {
+    width: 30px;
+    height: 30px;
 }
 
 .main {
@@ -133,6 +150,7 @@ body {
 }
 
 .project-info {
+    font-size: .8rem;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -140,9 +158,24 @@ body {
 }
 
 .project-info > p:first-child{
+    display: flex;
     font-family: "Playfair Display";
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1.4rem;
 }
 
+.project-card .link {
+    height: 25px;
+    width: 25px;
+}
+
+.project-card .links {
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
 
 .footer{
     display: flex;
@@ -151,6 +184,7 @@ body {
 }
 
 .footer-info {
+    font-size: 1rem;
     width: 300px;
     display: flex;
     flex-direction: column;
@@ -176,4 +210,16 @@ body {
     max-height: 300px;
     object-fit: cover;
     object-position: center;
+}
+
+.footer .links {
+    bottom: 20px;
+    right: 30px;
+    display: flex;
+    gap: 25px;
+}
+
+.footer .link {
+    width: 30px;
+    height: 30px;
 }
