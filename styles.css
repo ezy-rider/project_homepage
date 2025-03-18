@@ -191,10 +191,6 @@ body {
     position: relative;
 }
 
-.project-image {
-    /* width: 100%; */
-}
-
 .project-image img{
     width: 100%;
     max-height: 150px;
@@ -237,15 +233,16 @@ body {
     justify-content: center;
     background-color: rgb(47, 146, 179);
 
-    padding: 40px 0;
+    padding: 50px 0;
+    color: rgb(247, 242, 242);
 }
 
 .footer-info {
     font-size: 1rem;
-    width: 300px;
+    width: 400px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .footer-header {
@@ -254,17 +251,10 @@ body {
 
 }
 
-.footer-text {
-
-}
-
-.footer-image {
-    /* max-height: 200px; */
-}
-
 .footer-image img {
+    padding-left: 50px;
     width: 500px;
-    max-height: 300px;
+    max-height: 400px;
     object-fit: cover;
     object-position: center;
 }
@@ -279,4 +269,23 @@ body {
 .footer .link {
     width: 30px;
     height: 30px;
+}
+
+.footer .icon {
+    /* display: inline; */
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+}
+
+.footer-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+}
+
+.footer-contacts p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
